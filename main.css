@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    height: 15vh;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.brand {
+    font-family: 'Merriweather', serif;
+    color: #003A70;
+    font-size: 2.2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 3vw;
+}
+
+.brand span {
+    color: #97999B;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    
+}
+
+.navbar>a {
+    background: #fff;
+    color: #003A70;
+    margin: 0 0 4vh 0;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.navbar :nth-child(5) {
+    font-size: 1.5rem;
+    color: #535353;
+}
+
+.navbar :nth-child(6) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar :nth-child(6) i {
+    font-size: 1.5em;
+}
+
+.navbar :nth-child(6) small {
+    font-size: 0.6em;
+}
+
+#content {
+    height: 63vh;
+    background-image: url('assets/our-team-hp_jan-2018.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 3fr 1fr;
+}
+
+.back_button {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.forward_button {
+    grid-column-end: end;
+    grid-row-start: 2;
+    
+}
+
+.content_buttons {
+    height: 100px;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #bbb;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 1s, color 1s;
+}
+
+.content_buttons:hover {
+    background-color: #20366F;
+    color: #fff;
+}
+
+.headline {
+    grid-row-start: 2;
+    color: white;
+    font-size: 3em;
+}
+
+#sidebar {
+    height: 22vh;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.sidebar_box {
+    border-right: solid 5px #548BB4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+#sidebar a {
+    color: #315671;
+    font-size: 1.7rem;
+    padding: 0 10%;
+    font-weight: 700;
+}
+
+#footer {
+    height: 9.5vh;
+    background: #F0F0F0;
+    list-style-type: none;
+    padding: 3vh 0 0 3vw;
+}
+
+#footer li {
+    display: inline;
+    color: #071C4D;
+    margin: 0 0 0 10px;
+    font-weight: 700;
+}
+
+#footer p {
+    padding: 3vh 0 0 0;
+}
+
+#footer a {
+    color: #071C4D;
+}
